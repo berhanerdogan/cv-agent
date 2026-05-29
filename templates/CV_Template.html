@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Template</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page {
+    margin: 0;
+    size: A4;
+  }
+
+  :root {
+    --blue: #2E75B6;
+    --dark: #1a1a1a;
+    --gray: #666;
+    --bg: #fff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #e8ecf0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0;
+    color: var(--dark);
+  }
+
+  .page {
+    background: var(--bg);
+    width: 210mm;
+    min-height: 297mm;
+    padding: 12mm 15mm 10mm 15mm;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.13);
+  }
+
+  .name {
+    font-size: 22pt;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--dark);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .contact-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 8pt;
+    color: var(--gray);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--blue);
+    flex-wrap: wrap;
+  }
+
+  .contact-bar a { color: var(--gray); text-decoration: none; }
+  .contact-bar .sep { color: var(--blue); font-weight: 500; }
+
+  .section { margin-top: 14px; }
+
+  .section-title {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: var(--blue);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--blue);
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+  }
+
+  .summary p {
+    font-size: 8.5pt;
+    line-height: 1.45;
+    color: var(--dark);
+  }
+
+  .skill-group {
+    font-size: 8pt;
+    line-height: 1.5;
+    color: var(--dark);
+  }
+
+  .skill-category {
+    font-weight: 600;
+  }
+
+  .entry { margin-bottom: 8px; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .entry-title {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .entry-meta {
+    font-size: 7.5pt;
+    color: var(--gray);
+    font-style: italic;
+  }
+
+  .entry-stack {
+    font-size: 7.5pt;
+    color: var(--gray);
+    font-style: italic;
+  }
+
+  .entry ul { padding-left: 12px; list-style: none; }
+
+  .entry ul li {
+    font-size: 8pt;
+    line-height: 1.4;
+    color: var(--dark);
+    position: relative;
+    padding-left: 2px;
+    margin-bottom: 1px;
+  }
+
+  .entry ul li::before {
+    content: "\2022";
+    position: absolute;
+    left: -10px;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .edu-title { font-size: 8.5pt; font-weight: 600; color: var(--dark); }
+  .edu-date { font-size: 7.5pt; color: var(--gray); font-style: italic; }
+  .edu-sub { font-size: 7.8pt; color: var(--gray); margin-top: 1px; margin-bottom: 5px; }
+
+  .cert { font-size: 8pt; color: var(--dark); }
+
+  .placeholder {
+    background: #e8f0f9;
+    border-radius: 3px;
+    padding: 0 3px;
+    color: #2E75B6;
+    font-style: italic;
+  }
+
+  @media print {
+    body { background: white; padding: 0; display: block; }
+    .page { box-shadow: none; width: 100%; min-height: unset; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="name"><span class="placeholder">FULL NAME</span></div>
+  <div class="contact-bar">
+    <span class="placeholder">City, Province</span>
+    <span class="sep">·</span>
+    <span class="placeholder">email@example.com</span>
+    <span class="sep">·</span>
+    <span class="placeholder">000-000-0000</span>
+    <span class="sep">·</span>
+    <span class="placeholder">github.com/username</span>
+  </div>
+
+  <div class="section summary">
+    <div class="section-title">Summary</div>
+    <p><span class="placeholder">Write 3-4 sentences. Who you are, what you build, what makes you effective, one credential. No fluff.</span></p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-group"><span class="skill-category">Category 1:</span> <span class="placeholder">Keyword, Keyword, Keyword, Keyword, Keyword</span></div>
+    <div class="skill-group"><span class="skill-category">Category 2:</span> <span class="placeholder">Keyword, Keyword, Keyword, Keyword</span></div>
+    <div class="skill-group"><span class="skill-category">Category 3:</span> <span class="placeholder">Keyword, Keyword, Keyword, Keyword</span></div>
+    <div class="skill-group"><span class="skill-category">Category 4:</span> <span class="placeholder">Keyword, Keyword, Keyword, Keyword</span></div>
+    <div class="skill-group"><span class="skill-category">Category 5:</span> <span class="placeholder">Keyword, Keyword, Keyword</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><span class="placeholder">Project Name: Short Description</span></span>
+        <span class="entry-stack"><span class="placeholder">Tech · Tech · Tech · Tech</span></span>
+      </div>
+      <ul>
+        <li><span class="placeholder">What problem did you solve? What did you build? What was the outcome?</span></li>
+        <li><span class="placeholder">Second bullet: technical detail, scale, or impact.</span></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><span class="placeholder">Project Name: Short Description</span></span>
+        <span class="entry-stack"><span class="placeholder">Tech · Tech · Tech</span></span>
+      </div>
+      <ul>
+        <li><span class="placeholder">What problem did you solve? What did you build? What was the outcome?</span></li>
+        <li><span class="placeholder">Second bullet: technical detail, scale, or impact.</span></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><span class="placeholder">Project Name: Short Description</span></span>
+        <span class="entry-stack"><span class="placeholder">Tech · Tech · Tech</span></span>
+      </div>
+      <ul>
+        <li><span class="placeholder">What problem did you solve? What did you build?</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><span class="placeholder">Job Title · Company Name</span></span>
+        <span class="entry-meta"><span class="placeholder">Mon YYYY – Present</span></span>
+      </div>
+      <ul>
+        <li><span class="placeholder">What did you own or build? What was the impact?</span></li>
+        <li><span class="placeholder">Second responsibility or achievement.</span></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><span class="placeholder">Job Title · Company Name</span></span>
+        <span class="entry-meta"><span class="placeholder">Mon YYYY – Mon YYYY</span></span>
+      </div>
+      <ul>
+        <li><span class="placeholder">Key responsibility or transferable skill.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="edu-row">
+      <span class="edu-title"><span class="placeholder">Degree / Diploma · Institution Name</span></span>
+      <span class="edu-date"><span class="placeholder">YYYY</span></span>
+    </div>
+    <div class="edu-sub"><span class="placeholder">Relevant coursework, honors, and notes</span></div>
+
+    <div class="edu-row">
+      <span class="edu-title"><span class="placeholder">Degree · Institution Name</span></span>
+      <span class="edu-date"><span class="placeholder">YYYY</span></span>
+    </div>
+    <div class="edu-sub"><span class="placeholder">Relevant coursework, honors, and notes</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert"><span class="placeholder">Certification Name (Exam Code)</span></div>
+  </div>
+
+</div>
+</body>
+</html>

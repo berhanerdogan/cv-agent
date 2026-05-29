@@ -1,0 +1,110 @@
+# [Your Name] — Profile
+
+## Personal Information
+
+- **Name:** [Your Name]
+- **Location:** [City, Province/State]
+- **Email:** [your.email@example.com]
+- **Phone:** [Your Phone Number]
+- **GitHub:** github.com/[your-username]
+
+---
+
+## Projects
+
+### [Project Name 1] — [Brief Descriptor]
+- **Stack:** [Tech Stack: e.g. Node.js, Express, Google Sheets API, React, Render, HMAC webhooks, OAuth]
+- **What it is:** [One-sentence description of the project and the problem it solves.]
+- **What it does:** [Key technical capabilities: API backend, real-time sync, security features, UI, logging.]
+- **Impact:** [Production status, scale, users, or business value. E.g. "Actively maintained in production. Sole developer — designed, built, deployed, and documented the entire system."]
+- **Soft skills demonstrated:** [E.g. Wrote documentation, trained non-technical staff, translated operational needs into automated solutions.]
+
+### [Project Name 2] — [Brief Descriptor]
+- **Stack:** [Tech Stack: e.g. Python, PyQt6, SQLite, GitHub Actions]
+- **GitHub:** github.com/[your-username]/[project-name]
+- **What it is:** [One-sentence description, e.g. "Desktop application for real-time diagnostics."]
+- **What it does:** [Key capabilities: features, data handling, analytics.]
+- **Distribution:** [E.g. "Packaged as standalone binary, distributed via GitHub Releases using GitHub Actions CI/CD pipeline."]
+
+### [Project Name 3] — [Brief Descriptor]
+- **Stack:** [Tech Stack: languages, frameworks, tools]
+- **What it is:** [Describe the problem you solved and what you built.]
+- **What it does:** [Technical details: what you extended, built, or integrated.]
+- **Additional:** [Optional: other tools explored, comparisons made, tradeoffs assessed.]
+- **Note:** [Any caveats about experience level — e.g. "Working knowledge — do not overstate."]
+
+### [Project Name 4] — [Brief Descriptor]
+- **Stack:** [Tech Stack: tools and platforms used]
+- **What it is:** [One-sentence description.]
+- **What it does:** [What you deployed, benchmarked, or evaluated.]
+- **Infrastructure:** [How you configured networking, access, and management.]
+
+### [Project Name 5] — [Brief Descriptor]
+- **Stack:** [Tech Stack: e.g. Proxmox, Ubuntu, Nextcloud, Pi-hole, VPN, DNS]
+- **What it is:** [One-sentence description, e.g. "Multi-VM environment running self-hosted services."]
+- **What it does:** [Services deployed, responsibilities handled.]
+
+---
+
+## Work Experience
+
+### [Job Title] — [Company Name]
+- **Period:** [Start Date] – [End Date]
+- **Location:** [City, Province/State]
+- [Bullet point describing key achievement or responsibility.]
+- [Bullet point describing technical or operational contribution.]
+- [Bullet point describing teamwork, training, or communication impact.]
+
+### [Job Title] — [Company Name]
+- **Period:** [Start Date] – [End Date]
+- **Location:** [City, Country]
+- [Bullet point describing key achievement or responsibility.]
+- [Bullet point describing documentation or process work.]
+- [Bullet point describing communication or soft skills demonstrated.]
+
+---
+
+## Education
+
+### [Degree/Diploma] — [Institution Name], [Location]
+- **Year:** [Year of completion]
+- **GPA:** [GPA]
+- **Honours:** [Any academic honours or awards]
+- **Relevant coursework:** [Comma-separated list of relevant courses and topics.]
+
+### [Degree] — [University Name], [Country]
+- **Year:** [Year of completion]
+- **GPA:** [GPA]
+- **Note:** [Optional: exchange programs, additional context.]
+
+---
+
+## Certifications
+
+- [Certification Name, including exam codes if applicable]
+
+---
+
+## Technical Experience (Detailed)
+
+- **[Category 1]:** [Brief description of hands-on experience — tools used, tasks performed, depth of knowledge.]
+- **[Category 2]:** [Brief description of daily use, proficiency level.]
+- **[Category 3]:** [Brief description of custom work or integration built.]
+- **[Category 4]:** [Brief description — frameworks explored, proficiency caveat if needed.]
+- **[Category 5]:** [Brief description of infrastructure or tooling configured.]
+- **[Category 6]:** [Brief description of scripting or automation experience.]
+- **[Category 7]:** [Brief description of CI/CD or deployment work.]
+
+---
+
+## Writing & Formatting Rules for Agent
+
+- Never use em dashes
+- Never exceed one page
+- For intro-level skills, use "working knowledge" or "familiar" — never overstate
+- Write ATS-friendly: list skills as plain comma-separated text, no tables or complex layouts
+- Decide which projects and experiences to highlight based on the job posting
+- Never add anything that is not true
+- Never use em dashes
+
+---

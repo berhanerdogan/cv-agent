@@ -1,0 +1,44 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.backup
+*.bak
+
+# IDEs
+.idea/
+.vscode/
+
+# Package manager lock files
+package-lock.json
+bun.lock
+yarn.lock
+pnpm-lock.yaml
+
+# Agent config generated files
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+
+# Dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/out/
+
+# OS artifacts
+Thumbs.db

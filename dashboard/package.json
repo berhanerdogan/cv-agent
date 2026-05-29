@@ -1,0 +1,21 @@
+{
+  "name": "dashboard",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "tsx": "^4.22.3",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opencode-ai/sdk": "^1.15.10",
+    "@opentui/core": "^0.2.16",
+    "express": "^5.2.1",
+    "opentui-spinner": "^0.0.6"
+  }
+}

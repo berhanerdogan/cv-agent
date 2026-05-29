@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2",
+    "name": "Full Stack Engineer",
+    "link": "https://example.com/jobs/fullstack-engineer",
+    "status": "applied",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "3",
+    "name": "Backend Developer",
+    "link": "https://example.com/jobs/backend-dev",
+    "status": "rejected",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "4",
+    "name": "DevOps Engineer",
+    "link": "https://example.com/jobs/devops",
+    "status": "rejected",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "5",
+    "name": "React Native Developer",
+    "link": "https://example.com/jobs/react-native",
+    "status": "offer",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "6",
+    "name": "Senior Frontend Developer",
+    "link": "https://example.com/jobs/senior-frontend",
+    "status": "applied",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "7",
+    "name": "Full Stack Engineer",
+    "link": "https://example.com/jobs/fullstack-engineer",
+    "status": "interview",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "8",
+    "name": "Backend Developer",
+    "link": "https://example.com/jobs/backend-dev",
+    "status": "pending",
+    "path": "output/cv_example.pdf"
+  },
+  {
+    "id": "9",
+    "name": "DevOps Engineer",
+    "link": "https://example.com/jobs/devops",
+    "status": "rejected",
+    "path": "output/cv_example.pdf"
+  }
+]
