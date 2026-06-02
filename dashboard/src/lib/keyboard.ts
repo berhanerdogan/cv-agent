@@ -8,7 +8,7 @@ import { openLink } from './files'
 
 const DATA_PATH = path.join(__dirname, '../../../data/applications.json')
 
-export const setupKeyboardEvents = (renderer: CliRenderer, data: any[], refresh: () => Promise<void>) => {
+export const setupKeyboardEvents = (renderer: CliRenderer, refresh: () => Promise<void>) => {
 	renderer.keyInput.on('keypress', async (key: KeyEvent) => {
 		if (key.name === 'left' || key.name === 'right') {
 			const tabSelect: any = renderer.root.findDescendantById('tabs')
@@ -42,12 +42,24 @@ export const setupKeyboardEvents = (renderer: CliRenderer, data: any[], refresh:
 			appState.focusedIndex = -1
 			return
 		}
-		if (key.ctrl && key.name === 'o' && appState.focusedIndex >= 0) {
-			openLink(data[appState.focusedIndex].link)
+		if (key.ctrl && key.name === 'o') {
+			if (appState.focusedIndex < 0) return
+			const row = rows[appState.focusedIndex]
+			if (!row) return
+			const itemId = row.id.replace('row-', '')
+			const freshData = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'))
+			const entry = freshData.find((e: any) => e.id === itemId)
+			if (entry) openLink(entry.link)
 			return
 		}
 		if (key.ctrl && key.name === 'p') {
-			openLink(path.join(__dirname, '..', '..', '..', data[appState.focusedIndex].path))
+			if (appState.focusedIndex < 0) return
+			const row = rows[appState.focusedIndex]
+			if (!row) return
+			const itemId = row.id.replace('row-', '')
+			const freshData = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'))
+			const entry = freshData.find((e: any) => e.id === itemId)
+			if (entry) openLink(path.join(__dirname, '..', '..', '..', entry.path))
 			return
 		}
 		if (key.ctrl && key.name === 's') {

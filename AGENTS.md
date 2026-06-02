@@ -59,7 +59,7 @@ Using `profile.md` and the job posting:
 - Read `templates/CV_Template.html`
 - Replace all placeholder content with the tailored CV content
 - Remove the `.placeholder` CSS class and styling from filled elements
-- Save the filled file as `output/cv_[company_name].html`
+- Save the filled file as `output/cv_[user_name]_[company_name].html`
 
 ---
 
@@ -68,7 +68,7 @@ Using `profile.md` and the job posting:
 Run the following command:
 
 ```bash
-python scripts/generate_pdf.py output/cv_[company_name].html output/cv_[company_name].pdf
+python scripts/generate_pdf.py output/cv_[user_name]_[company_name].html output/cv_[user_name]_[company_name].pdf
 ```
 
 Confirm the PDF was created and report the output path.
@@ -88,11 +88,13 @@ After the PDF is confirmed created:
    {
      "id": "<next id as string>",
      "name": "<job title from Step 2>",
+     "company": "<company name from Step 2>",
      "link": "<job posting URL or empty string>",
      "status": "pending",
      "path": "output/cv_[company_name].pdf"
    }
    ```
+   - Company name comes from Step 2 extraction.
    - If the job posting was provided via URL in Step 2, use that URL for `link`.
    - If the job posting was pasted as text, set `link` to `""` for now.
 

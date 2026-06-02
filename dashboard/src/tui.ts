@@ -9,7 +9,7 @@ import { setupKeyboardEvents } from './lib/keyboard'
 
   
 
-export const buildTui = async (renderer: CliRenderer, data: any[]) => {
+export const buildTui = async (renderer: CliRenderer) => {
 	const main = new BoxRenderable(renderer, {
 		id: 'main',
 		width: '100%',
@@ -17,12 +17,12 @@ export const buildTui = async (renderer: CliRenderer, data: any[]) => {
 		flexDirection: 'column',
 		backgroundColor: theme.bg
 	})
-	const { content, refresh } = await buildContentArea(renderer, data)
+	const { content, refresh } = await buildContentArea(renderer)
 	main.add(buildHeader(renderer))
   main.add(buildTabs(renderer, refresh))
 	main.add(content)
 	main.add(buildFooter(renderer))
 	renderer.root.add(main)
 
-  setupKeyboardEvents(renderer, data, refresh)
+  setupKeyboardEvents(renderer, refresh)
 }

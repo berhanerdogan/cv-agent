@@ -1,7 +1,6 @@
 import theme from '../../theme'
 import type { CliRenderer } from '@opentui/core'
 import { BoxRenderable, TextRenderable, ScrollBoxRenderable, RenderableEvents } from '@opentui/core'
-import { truncate } from '../utils/string'
 
 const buildContent = async (renderer: CliRenderer, data: any[]) => {
 
@@ -17,13 +16,13 @@ const buildContent = async (renderer: CliRenderer, data: any[]) => {
 	const header = new BoxRenderable(renderer, {
 		id: 'header-row',
 		flexDirection: 'row',
-		gap: 0,
+		gap: 2,
 		width: '100%',
 		backgroundColor: theme.bgAlt
 	})
-	header.add(new TextRenderable(renderer, { id: 'h-name', content: ' NAME', fg: theme.blue, width: '40%' }))
-	header.add(new TextRenderable(renderer, { id: 'h-link', content: ' LINK', fg: theme.blue, width: '45%' }))
-	header.add(new TextRenderable(renderer, { id: 'h-status', content: ' STATUS', fg: theme.blue, width: '15%' }))
+	header.add(new TextRenderable(renderer, { id: 'h-name', content: ' NAME', fg: theme.blue, flexGrow: 40, flexBasis: 0 }))
+	header.add(new TextRenderable(renderer, { id: 'h-company', content: ' COMPANY', fg: theme.blue, flexGrow: 45, flexBasis: 0 }))
+	header.add(new TextRenderable(renderer, { id: 'h-status', content: ' STATUS', fg: theme.blue, flexGrow: 15, flexBasis: 0 }))
 	table.add(header)
 
 	data.forEach((row: any) => {
@@ -37,9 +36,9 @@ const buildContent = async (renderer: CliRenderer, data: any[]) => {
 		const rowBox = new BoxRenderable(renderer, {
 			id: `row-${row.id}`,
 			flexDirection: 'row',
-			gap: 0,
-			width: '100%',
-			focusable: true,
+		gap: 2,
+		width: '100%',
+		focusable: true,
 		})
 
 		rowBox.on(RenderableEvents.FOCUSED, () => {
@@ -50,9 +49,9 @@ const buildContent = async (renderer: CliRenderer, data: any[]) => {
 			rowBox.backgroundColor = undefined
 		})
 
-		rowBox.add(new TextRenderable(renderer, { id: `name-${row.id}`, content: ` ${row.name}`, width: '40%' }))
-		rowBox.add(new TextRenderable(renderer, { id: `link-${row.id}`, content: ` ${truncate(row.link, 30)}`, fg: theme.dim, width: '45%' }))
-		rowBox.add(new TextRenderable(renderer, { id: `status-${row.id}`, content: ` ${row.status}`, fg: statusColors[row.status] ?? theme.dim, width: '15%' }))
+		rowBox.add(new TextRenderable(renderer, { id: `name-${row.id}`, content: ` ${row.name}`, wrapMode: 'none', truncate: true, flexGrow: 40, flexBasis: 0 }))
+		rowBox.add(new TextRenderable(renderer, { id: `company-${row.id}`, content: ` ${row.company}`, wrapMode: 'none', truncate: true, fg: theme.dim, flexGrow: 45, flexBasis: 0 }))
+		rowBox.add(new TextRenderable(renderer, { id: `status-${row.id}`, content: ` ${row.status}`, wrapMode: 'none', fg: statusColors[row.status] ?? theme.dim, flexGrow: 15, flexBasis: 0 }))
 		table.add(rowBox)
 		rows.push(rowBox)
 	})

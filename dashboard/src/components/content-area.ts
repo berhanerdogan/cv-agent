@@ -10,7 +10,7 @@ import path from 'path'
 
 const DATA_PATH = path.join(__dirname, '../../../data/applications.json')
 
-export const buildContentArea = async (renderer: CliRenderer, data: any[]) => {
+export const buildContentArea = async (renderer: CliRenderer) => {
 
   const content = new BoxRenderable(renderer, {
     id: 'content',
