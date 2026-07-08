@@ -57,8 +57,8 @@ Using `profile.md` and the job posting:
 ## Step 5 — Fill the Template
 
 - Read `templates/CV_Template.html`
-- Replace all placeholder content with the tailored CV content
-- Remove the `.placeholder` CSS class and styling from filled elements
+- Elements with `class="placeholder"` are dummy content. Replace their text and remove the class.
+- Elements with `data-type="label"` are literal labels to keep as-is. Wrap them in appropriate links (e.g. `<a href="...">GitHub</a>`), keep the text, and remove the attribute.
 - Save the filled file as `output/cv_[user_name]_[company_name].html`
 
 ---
